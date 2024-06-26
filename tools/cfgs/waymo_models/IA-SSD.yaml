@@ -1,7 +1,7 @@
 CLASS_NAMES: ['Vehicle', 'Pedestrian', 'Cyclist']
 
 DATA_CONFIG:
-    _BASE_CONFIG_: /data2/hcyang/IA-SSD/tools/cfgs/dataset_configs/waymo_dataset.yaml #cfgs/dataset_configs/waymo_dataset.yaml
+    _BASE_CONFIG_: cfgs/dataset_configs/waymo_dataset.yaml
     DATA_SPLIT: {
         'train': train,
         'test': val,

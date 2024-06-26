@@ -376,7 +376,6 @@ class WaymoDataset(DatasetTemplate):
                         gt_points.tofile(f)
 
                     db_path = str(filepath.relative_to(self.root_path))  # gt_database/xxxxx.bin
-                    # db_path = str(filepath.relative_to(Path('/data3/hcyang/pcdet/data/waymo')))  # gt_database/xxxxx.bin
                     db_info = {'name': names[i], 'path': db_path, 'sequence_name': sequence_name,
                                'sample_idx': sample_idx, 'gt_idx': i, 'box3d_lidar': gt_boxes[i],
                                'num_points_in_gt': gt_points.shape[0], 'difficulty': difficulty[i]}
@@ -468,8 +467,8 @@ if __name__ == '__main__':
         create_waymo_infos(
             dataset_cfg=dataset_cfg,
             class_names=['Vehicle', 'Pedestrian', 'Cyclist'],
-            data_path=Path('/data3/hcyang/pcdet/data/waymo'),
-            save_path=Path('/data3/hcyang/pcdet/data/waymo'),
+            data_path=ROOT_DIR / 'data' / 'waymo',
+            save_path=ROOT_DIR / 'data' / 'waymo',
             raw_data_tag='raw_data',
             processed_data_tag=args.processed_data_tag
         )
