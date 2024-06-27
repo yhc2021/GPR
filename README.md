@@ -105,7 +105,7 @@ sh scripts/dist_test.sh ${NUM_GPUS} \
 
 -  Release pre-trained model of GPR on KITTI dataset
 -  Release pre-trained model of GPR on Waymo dataset
--  Release gpu code of GPR
+-  Release gpu code of GPR for Waymo dataset
 -  Update the patchwork++ compilation documentation
 
 
